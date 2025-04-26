@@ -8,14 +8,15 @@
 
 # PyTorch
 # https://pytorch.org/get-started/locally/
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.1
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/rocm6.3
 
 # BitsandBytes
 # main repository: https://github.com/bitsandbytes-foundation/bitsandbytes
 # AMD ROCm repository: https://github.com/ROCm/bitsandbytes
 git clone --recurse https://github.com/ROCm/bitsandbytes
 cd bitsandbytes
-git checkout rocm_enabled
+# git checkout rocm_enabled
+git checkout rocm_enabled_multi_backend
 pip install -r requirements-dev.txt
 cmake -DCOMPUTE_BACKEND=hip -S . -DBNB_ROCM_ARCH="gfx1100"
 make

@@ -15,7 +15,7 @@ git clone https://${HF_USERNAME}:${HF_ACCESS_TOKEN}@huggingface.co/meta-llama/Ll
 
 # Get MetaMathQA dataset
 # https://meta-math.github.io/
-# git clone https://huggingface.co/datasets/meta-math/MetaMathQA
+git clone https://huggingface.co/datasets/meta-math/MetaMathQA
 
 # You can also download these via the Python API
 # https://huggingface.co/docs/hub/en/models-downloading
