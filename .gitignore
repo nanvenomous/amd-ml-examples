@@ -1,6 +1,7 @@
 ./*.tif
 ./*.png
 ./*.gif
+data
 bitsandbytes
 Llama-3.2-3B
 MetaMathQA
